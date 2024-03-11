@@ -66,14 +66,11 @@ a{
     justify-content: space-between;
     font-size: 2.1rem;
     font-weight: 700;
-    padding: none;
-    margin-bottom: none;
 }
 h2 p{
     font-size:1.5rem ;
     font-weight: 500;
     opacity: 0.7;
-    padding: 2rem;
 }
 h2:hover{
 text-decoration: underline;
@@ -207,25 +204,33 @@ padding: 0.5rem 0 0.5rem 0;
 }
 .card{
     
-    width: 200px;
+    width: 220px;
+    height: fit-content;
     border-radius: 0.5rem;
-    padding: 0.5rem;
-    margin-left: 1.5rem;
-    margin-right: 1rem;
-    margin-top: 1rem;
+    padding:  0.5rem;
+    margin: 0 0.5rem 0 0.5rem;
 }
 .card:hover{
     background-color: #232323;
-    box-shadow: 2px solid #121212;
+    box-shadow: 3px solid black;
+}
+.card:hover .card-button{
+    opacity: 1;
+    transition: opacity 8ms ease-in-out 2ms;
+
 }
 
 .card-container{
     display: flex;
     flex-wrap: wrap;
-
+    align-items: center;
+    
+    
 }
+
 .card-image{
     width: 100%;
+    height: 100%;
     border-radius: 0.5rem;
 
 }
@@ -244,7 +249,8 @@ top:170px;
 left: 115px;
 border-radius: 50%;
 background-color: rgb(58, 184, 58);
-display: none;
+opacity: 0;
+box-shadow:2px solid #232323;
 
 
 }
@@ -258,6 +264,18 @@ display: none;
     border-left: 24px solid black;
     border-bottom: 12px solid transparent;
 
+}
+.footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width: 90%;
+    height: 50%;
+    border-top: 1px solid white;
+    opacity: 0.4;
 }
 .music-player{
     position: fixed;
@@ -276,7 +294,7 @@ display: none;
     align-items: center;
 }
 .album{
-    width: 20%;
+    width: 25%;
     display: flex;
     align-items: center;
     
@@ -316,7 +334,7 @@ display: none;
     width: 50%;
 }
 .controls{
-    width: 30%;
+    width: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
