@@ -60,6 +60,24 @@ a{
     
 
 }
+.main-content h2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2.1rem;
+    font-weight: 700;
+    padding: none;
+    margin-bottom: none;
+}
+h2 p{
+    font-size:1.5rem ;
+    font-weight: 500;
+    opacity: 0.7;
+    padding: 2rem;
+}
+h2:hover{
+text-decoration: underline;
+}
 
 .lib{
     background-color: #121212;
@@ -188,15 +206,19 @@ padding: 0.5rem 0 0.5rem 0;
     }
 }
 .card{
-    background-color: #232323;
-    width: 180px;
+    
+    width: 200px;
     border-radius: 0.5rem;
     padding: 0.5rem;
     margin-left: 1.5rem;
+    margin-right: 1rem;
     margin-top: 1rem;
-    
-
 }
+.card:hover{
+    background-color: #232323;
+    box-shadow: 2px solid #121212;
+}
+
 .card-container{
     display: flex;
     flex-wrap: wrap;
@@ -241,7 +263,7 @@ display: none;
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 75px;
+    height: 90px;
     background-color: black;
     display: flex;
     justify-content: space-between;
@@ -254,12 +276,12 @@ display: none;
     align-items: center;
 }
 .album{
-    width: 25%;
+    width: 20%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    
     margin-right: 1rem;
-    padding: 1rem;
+    padding: 0.5rem;
 
 }
 .album-image{
@@ -268,22 +290,41 @@ display: none;
 }
 .album-icon{
     height: 2rem;
-    margin-right: 7rem;
+    margin-left: 4rem;
+    opacity: 0.7;
 }
+.album .title{
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 0.4rem;
+}
+.album .artist{
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0.6;
+    line-height: 0.4rem;
+}
+.album .info{
+    display: block;
+    
+    
+    
+}
+
 
 .player{
     width: 50%;
 }
 .controls{
-    width: 25%;
+    width: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 .controls img{
     height: 2rem;
-    margin-right: 3rem;
+    margin-right: 1rem;
 }
 .player-control-icon{
     height: 1rem;
@@ -317,9 +358,30 @@ display: none;
     appearance: none;
     height: 16px;
     width: 16px;
-    background-color: #1bd760;
+    background-color:#1bd760;
     border-radius: 50%;
     margin-top: -6px;
+}
+
+.img-edit2{
+    opacity: 0.6;
+    height: 0.4rem;
+    width: 1.7rem;
+    
+    
+}
+.img-edit1{
+    width: 2em;
+    height: 4rem;
+
+}
+.controls i{
+    opacity: 0.6;
+    margin-right: 0.5rem;
+}
+.controls .progress-bar{
+    width: 20%;
+    margin-right: 1rem;
 }
 
 
