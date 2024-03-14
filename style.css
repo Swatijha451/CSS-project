@@ -26,6 +26,7 @@ a{
     margin-right: 0.5rem;
     overflow: hidden;
 }
+
 .nav{
     background-color: #121212;
     border-radius: 1rem;
@@ -83,6 +84,11 @@ text-decoration: underline;
     
     margin-top:0.5rem;
     height: 100%;
+}
+@media(min-height:900px){
+    .lib{
+        overflow: auto;
+    }
 }
 .option{
      display: flex;
